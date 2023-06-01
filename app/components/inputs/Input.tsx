@@ -44,8 +44,7 @@ const Input: React.FC<InputProps> = ({
           disabled={disabled}
           {...register(id, { required })}
           className={clsx(
-            `
-            form-input
+            `form-input
             block 
             w-full 
             rounded-md 
@@ -62,7 +61,7 @@ const Input: React.FC<InputProps> = ({
             focus:ring-sky-600 
             sm:text-sm 
             sm:leading-6`,
-            errors[id] && "focus:ring-rose-500",
+            errors[id] && "outline-rose-500 ring-rose-500 ring-1",
             disabled && "opacity-50 cursor-default"
           )}
         />
