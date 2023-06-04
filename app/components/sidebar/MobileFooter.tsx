@@ -8,6 +8,8 @@ const MobileFooter = () => {
   const routes = useRoutes();
   const { isOpen } = useConversation();
 
+  //hide the mobile footer if the user has an active conversarion going on
+  //(on the bottom we only want the user to have the message form and not the mobile footer)
   if (isOpen) {
     return null;
   }
